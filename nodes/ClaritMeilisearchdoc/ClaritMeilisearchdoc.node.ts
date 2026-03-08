@@ -40,8 +40,8 @@ const nodeDescription = {
 				name: 'url_meilisearch',
 				type:  'string',
 				default: '',
-				placeholder: (store_data_config as JsonObject)?.url as string ?? 'http://localhost:7700',
-				required:  (store_data_config as JsonObject)?.url as string === "http://127.0.0.1:7700" ? true : false, 
+				placeholder: (store_data_config as JsonObject)?.url as string ?? 'http://meilisearch:7700',
+				required:  (store_data_config as JsonObject)?.url as string === "http://meilisearch:7700" ? true : false, 
 				description: 'URL intern meilisearch',
 			},
 			{

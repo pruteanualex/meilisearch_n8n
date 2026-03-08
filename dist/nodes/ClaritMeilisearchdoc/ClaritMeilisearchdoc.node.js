@@ -73,8 +73,8 @@ const nodeDescription = {
             name: 'url_meilisearch',
             type: 'string',
             default: '',
-            placeholder: (_a = store_data_config === null || store_data_config === void 0 ? void 0 : store_data_config.url) !== null && _a !== void 0 ? _a : 'http://localhost:7700',
-            required: (store_data_config === null || store_data_config === void 0 ? void 0 : store_data_config.url) === "http://127.0.0.1:7700" ? true : false,
+            placeholder: (_a = store_data_config === null || store_data_config === void 0 ? void 0 : store_data_config.url) !== null && _a !== void 0 ? _a : 'http://meilisearch:7700',
+            required: (store_data_config === null || store_data_config === void 0 ? void 0 : store_data_config.url) === "http://meilisearch:7700" ? true : false,
             description: 'URL intern meilisearch',
         },
         {
