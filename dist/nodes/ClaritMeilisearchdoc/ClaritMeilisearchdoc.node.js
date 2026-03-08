@@ -115,12 +115,12 @@ class ClaritMeilisearchdoc {
                 const stored_index = store_data_config === null || store_data_config === void 0 ? void 0 : store_data_config.index;
                 if (stored_url !== url_meilisearch || stored_index !== index_meilisearch) {
                     await fs.promises.writeFile(store_data_path_conf, JSON.stringify({ "url": url_meilisearch !== "" ? url_meilisearch : stored_url, "index": index_meilisearch !== "" ? index_meilisearch : stored_index }));
-                    dist_url = url_meilisearch !== "" ? url_meilisearch : stored_url;
-                    dist_index = index_meilisearch !== "" ? index_meilisearch : stored_index;
+                    dist_url = url_meilisearch !== "" ? url_meilisearch.trim() : stored_url.trim();
+                    dist_index = index_meilisearch !== "" ? index_meilisearch.trim() : stored_index.trim();
                 }
                 else {
-                    dist_url = stored_url;
-                    dist_index = stored_index;
+                    dist_url = stored_url.trim();
+                    dist_index = stored_index.trim();
                 }
                 const client = new meilisearch_1.Meilisearch({
                     host: dist_url,
