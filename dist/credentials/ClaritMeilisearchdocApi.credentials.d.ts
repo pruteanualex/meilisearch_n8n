@@ -4,11 +4,11 @@ export declare class ClaritMeilisearchdocApi implements ICredentialType {
     displayName: string;
     icon: Icon;
     documentationUrl: string;
-    properties: INodeProperties[];
     test: {
         request: {
-            baseURL: 'http://domain.ro:7700';
-            url: '/indexes/{index}/search';
+            baseURL: string;
+            url: string;
         };
     };
+    properties: INodeProperties[];
 }

@@ -7,6 +7,12 @@ class ClaritMeilisearchdocApi {
         this.displayName = 'Meilisearch Auth API';
         this.icon = { light: 'file:../icons/example.svg', dark: 'file:../icons/example.dark.svg' };
         this.documentationUrl = 'https://www.clarit.ro/';
+        this.test = {
+            request: {
+                baseURL: 'http://domain.ro:7700',
+                url: '/indexes/{index}/search',
+            },
+        };
         this.properties = [
             {
                 displayName: 'Meilisearch Bearer token',
