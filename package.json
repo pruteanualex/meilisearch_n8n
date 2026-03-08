@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-clarit-meilisearch",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Test",
   "license": "MIT",
   "homepage": "",
@@ -30,7 +30,9 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": false,
-    "credentials": [],
+    "credentials": [
+      "dist/credentials/ClaritMeilisearchdocApi.credentials.js"
+    ],
     "nodes": [
       "dist/nodes/ClaritMeilisearchdoc/ClaritMeilisearchdoc.node.js"
     ]
